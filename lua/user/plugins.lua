@@ -83,7 +83,7 @@ return packer.startup(function(use)
     "uga-rosa/cmp-dictionary",
     requires = { { "hrsh7th/nvim-cmp" } },
   }
-  use { "f3fora/cmp-spell" }
+  -- use { "f3fora/cmp-spell" }
 
   -- snippets
   use { "L3MON4D3/LuaSnip", commit = "8f8d493e7836f2697df878ef9c128337cbf2bb84" } --snippet engine

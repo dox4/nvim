@@ -104,7 +104,6 @@ cmp.setup {
         path = "[Path]",
         emoji = "[Emoji]",
         dictionary = "[Dict]",
-        spell = "[Spell]",
       })[entry.source.name]
       return vim_item
     end,
@@ -119,15 +118,15 @@ cmp.setup {
       name = "dictionary",
       keyword_length = 2,
     },
-    {
-      name = "spell",
-      option = {
-        keep_all_entries = false,
-        enable_in_context = function()
-          return true
-        end,
-      },
-    },
+    -- {
+    --   name = "spell",
+    --   option = {
+    --     keep_all_entries = false,
+    --     enable_in_context = function()
+    --       return true
+    --     end,
+    --   },
+    -- },
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
